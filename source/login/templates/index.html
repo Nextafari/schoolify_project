@@ -1,12 +1,9 @@
-{% load bootstrap4 %}
-{% bootstrap_css %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% load static %}
-  <link rel="stylesheet" type="css/text" href="{% static 'css/style.css' %}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -20,7 +17,7 @@
     .nav-link{
       font-family: 'Satisfy', cursive;
     }
-    
+
     #bg-slide{
       width: 100%;
       height: 100vh;
@@ -38,21 +35,23 @@
       0% {
         background-image: url("{%static 'img/237-536x354.jpg'%}"); 
       }
-      25% {
+      20% {
         background-image: url("{%static 'img/866-536x354.jpg'%}"); 
       }
-      50% {
+      40% {
         background-image: url("{%static 'img/870-536x354-blur_2-grayscale.jpg'%}"); 
       }
-      75% {
+      60% {
         background-image: url("{%static 'img/1084-536x354-grayscale.jpg' %}");
       }
+      80%{
+        background-image: url("{% static 'img/37.jpg' %}");
+      }
       100%{
-        background-image: url("{% static 'img/34.jpg' %}");
+        background-image: url("{% static 'img/37.jpg' %}");
       }
     }
-
-    
+   
   </style>
 
 

@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% block content %} {%load bootstrap4%}
+<style>
+    #button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: blue;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    
+    #button:hover {background-color: lightseagreen}
+    
+    #button:active {
+        background-color: blue;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+</style>
+
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card text-center card-body mt-">
+                <form action="/login/" method="POST">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <button id="button" class="btn btn-primary btn-sm">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

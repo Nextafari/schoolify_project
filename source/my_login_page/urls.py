@@ -24,5 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', login_views.index),
     path('login/', login_views.get_form),
-    path('login/index', login_views.index),
 ]

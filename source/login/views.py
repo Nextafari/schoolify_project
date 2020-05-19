@@ -19,7 +19,7 @@ def get_form(request):
         if form.is_valid():
         #Checks if form is valid.
 
-            return HttpResponseRedirect("index")
+            return HttpResponseRedirect("/")
             #Returns to another url
 
     else: 

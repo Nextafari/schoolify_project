@@ -18,7 +18,8 @@ def get_form(request):
         form = LoginForm(request.POST)
         if form.is_valid():
         #Checks if form is valid.
-            return HttpResponseRedirect('index.html')
+
+            return HttpResponseRedirect("index")
             #Returns to another url
 
     else: 

@@ -1,1 +1,1 @@
-web: gunicorn schoolify_project.source.my_login_page.wsgi--log-file-
+web: gunicorn my_login_page.wsgi--log-file-

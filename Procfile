@@ -1,1 +1,1 @@
-web: gunicorn --chdir schoolify my_login_page.wsgi
+web: gunicorn --chdir schoolify_project my_login_page.wsgi

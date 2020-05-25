@@ -5,14 +5,12 @@ from .forms import LoginForm
 # Create your views here.
 
 def index(request):
+    """A view function for the index page."""
     return render(request, 'index.html')
 
 
-def login(request):
-    return render(request, 'login.html')
-
 def get_form(request):
-    """This function gets the form data via post method"""
+    """View function for getting the form data via post method."""
     if request.method == "POST":
         #This creates an instance of the form and populates with data from the request above.
         form = LoginForm(request.POST)
